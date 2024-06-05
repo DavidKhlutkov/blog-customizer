@@ -11,9 +11,10 @@ type Story = StoryObj<typeof ArrowButton>;
 
 export const ArrowButtonStory: Story = {
 	render: () => {
+		const onClick = () => alert('клик на кнопку');
 		return (
 			<>
-				<ArrowButton />
+				<ArrowButton isOpen={true} onClick={onClick} />
 			</>
 		);
 	},
